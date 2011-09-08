@@ -6,16 +6,24 @@
     72
   ],
   "center": [
-    -89.1279602050769,
-    38.82473078093182,
-    8
+    -90.09338378906126,
+    36.58906837139809,
+    5
   ],
   "format": "png8",
   "interactivity": {
     "layer": "counties",
-    "template_teaser": "<div class='unem-tooltip'><strong>[NAMELSAD10]</strong><br /><strong>Unemployment</strong><div style='text-align:right'>\n[VALJAN10]% <small>01/2010</small><br />\n[VALUE]% <small>06/2011</small><br />\n[VALD] <small>change</small></div>\n<strong>Recovery Act</strong><div style='text-align:right'>$[PERCAP] <small>per capita</div></div><style type='text/css'>.unem-tooltip { text-align:right !important; } .unem-tooltip small { display:inline-block !important; width: 5em !important; text-align:left !important; }</style>",
+    "template_teaser": "<div class='unem-tooltip'><strong>[NAMELSAD10]</strong><br /><strong>Unemployment</strong><div style='text-align:right'>\n[VALJUN10]% <small>06/2010</small><br />\n[VALUE]% <small>06/2011</small><br />\n[D11_10] <small>change</small></div>\n<strong>Recovery Act</strong><div style='text-align:right'>[SUMNAME] <small>total</small><br />$[PERCAP] <small>per capita</div></div><style type='text/css'>.unem-tooltip { text-align:right !important; } .unem-tooltip small { display:inline-block !important; width: 5em !important; text-align:left !important; }</style>",
     "template_full": "",
-    "template_location": ""
+    "template_location": "",
+    "fields": [
+      "NAMELSAD10",
+      "VALJUN10",
+      "VALUE",
+      "D11_10",
+      "SUMNAME",
+      "PERCAP"
+    ]
   },
   "minzoom": 0,
   "maxzoom": 9,
@@ -59,9 +67,9 @@
       }
     }
   ],
-  "description": "Change in unemployment (1/2010 - 6/2011) vs. Recovery act spending per capita",
+  "description": "Change in unemployment (June 2010-2011) vs. Recovery act spending",
   "attribution": "",
-  "legend": "<div class='unem'><strong>Change in unemployment (1/2010 - 6/2011)<br/>vs. Recovery act spending per capita</strong><div class='unem-grid'> <div class='unem-label unem-y'>< -3.0</div><div class='unem-swatch unem-uA unem-s0'></div><div class='unem-swatch unem-uA unem-s1'></div><div class='unem-swatch unem-uA unem-s2'></div><div class='unem-swatch unem-uA unem-s3'></div> <div class='unem-label unem-y'>< -0.5</div><div class='unem-swatch unem-u0 unem-s0'></div><div class='unem-swatch unem-u0 unem-s1'></div><div class='unem-swatch unem-u0 unem-s2'></div><div class='unem-swatch unem-u0 unem-s3'></div> <div class='unem-label unem-y'>0.0</div><div class='unem-swatch unem-u1 unem-s0'></div><div class='unem-swatch unem-u1 unem-s1'></div><div class='unem-swatch unem-u1 unem-s2'></div><div class='unem-swatch unem-u1 unem-s3'></div> <div class='unem-label unem-y'>> +0.5</div><div class='unem-swatch unem-u2 unem-s0'></div><div class='unem-swatch unem-u2 unem-s1'></div><div class='unem-swatch unem-u2 unem-s2'></div><div class='unem-swatch unem-u2 unem-s3'></div> <div class='unem-label unem-y'>> +1.0</div><div class='unem-swatch unem-u3 unem-s0'></div><div class='unem-swatch unem-u3 unem-s1'></div><div class='unem-swatch unem-u3 unem-s2'></div><div class='unem-swatch unem-u3 unem-s3'></div> <div class='unem-label'></div><div class='unem-label'>$0+</div><div class='unem-label'>$200+</div><div class='unem-label'>$400+</div><div class='unem-label'>$800+</div></div> </div><style type='text/css'>.unem,.unem-grid,.unem-label,.unem-swatch { font:normal 10px/20px Arial,sans-serif !important; padding:0px !important; margin:0px !important; border:0px !important; } .unem strong { line-height:15px !important; display:block; padding:5px 0px !important; } .unem-grid { width:200px; height:100px; } .unem-label,.unem-swatch { width:40px; height:20px; float:left; white-space:nowrap; } .unem-uA { background-color:#6c4; } .unem-u0 { background-color:#ae4; } .unem-u1 { background-color:#de4; } .unem-u2 { background-color:#fa1; } .unem-u3 { background-color:#d14; } .unem-label { text-align:center; } .unem-y { text-align:right; width:35px; padding-right:5px !important; } .unem-s2 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAjSURBVAiZXcOxDQAgEAAhdPLf/GwsjCSopnLPqry2z8bc4AClpxD3TftiZgAAAABJRU5ErkJggg==); } .unem-s1 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAlSURBVAiZTcexDQAgDMAww+X9PCwMjZTBqqn851R+A3cDczfgAc0nEnc8V0MyAAAAAElFTkSuQmCC); } .unem-s0 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAhSURBVAiZY/gPAQ3///9n+P//fwMDMuc/lAHnIKuAawMAdbM3zSV+a2sAAAAASUVORK5CYII=); }</style>",
-  "name": "Chage in unemployment (1/2010 - 6/2011)",
+  "legend": "<div class='unem'><strong>Change in unemployment (June 2010-2011)<br/>vs. Recovery act spending</strong><div class='unem-grid'> <div class='unem-label unem-y'>< -1.5</div><div class='unem-swatch unem-uA unem-s0'></div><div class='unem-swatch unem-uA unem-s3'></div> <div class='unem-label unem-y'>-0.5 to -1.5</div><div class='unem-swatch unem-u0 unem-s0'></div><div class='unem-swatch unem-u0 unem-s3'></div> <div class='unem-label unem-y'>-0.5 to +0.5</div><div class='unem-swatch unem-u1 unem-s0'></div><div class='unem-swatch unem-u1 unem-s3'></div> <div class='unem-label unem-y'>+0.5 to +1.5</div><div class='unem-swatch unem-u2 unem-s0'></div><div class='unem-swatch unem-u2 unem-s3'></div> <div class='unem-label unem-y'>> +1.5</div><div class='unem-swatch unem-u3 unem-s0'></div><div class='unem-swatch unem-u3 unem-s3'></div> <div class='unem-label unem-y'></div><div class='unem-label'>$0+</div><div class='unem-label'>$10M+</div></div> </div><style type='text/css'>.unem,.unem-grid,.unem-label,.unem-swatch { font:normal 10px/20px Arial,sans-serif !important; padding:0px !important; margin:0px !important; border:0px !important; } .unem strong { line-height:15px !important; display:block; padding:5px 0px !important; } .unem-grid { width:200px; height:100px; } .unem-label,.unem-swatch { width:60px; height:20px; float:left; white-space:nowrap; } .unem-uA { background-color:#4c2; } .unem-u0 { background-color:#ae4; } .unem-u1 { background-color:#ee6; } .unem-u2 { background-color:#fa1; } .unem-u3 { background-color:#e42; } .unem-label { text-align:center; } .unem-y { text-align:right; width:75px; padding-right:5px !important; } .unem-s2 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAjSURBVAiZXcOxDQAgEAAhdPLf/GwsjCSopnLPqry2z8bc4AClpxD3TftiZgAAAABJRU5ErkJggg==); } .unem-s1 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAlSURBVAiZTcexDQAgDMAww+X9PCwMjZTBqqn851R+A3cDczfgAc0nEnc8V0MyAAAAAElFTkSuQmCC); } .unem-s0 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAhSURBVAiZY/gPAQ3///9n+P//fwMDMuc/lAHnIKuAawMAdbM3zSV+a2sAAAAASUVORK5CYII=); }</style>",
+  "name": "Chage in unemployment (June 2010-2011)",
   "version": "1.0.0"
 }
