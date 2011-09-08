@@ -33,7 +33,7 @@
       "Datasource": {
         "file": "layers/counties/ur-recov-county.shp",
         "id": "counties",
-        "project": "unemployment"
+        "project": "usa-unemployment-vs-stimulus"
       }
     },
     {
@@ -55,7 +55,7 @@
       "Datasource": {
         "file": "layers/counties/ur-recov-county.shp",
         "id": "labels",
-        "project": "unemployment"
+        "project": "usa-unemployment-vs-stimulus"
       }
     }
   ],
