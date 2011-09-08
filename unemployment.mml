@@ -1,0 +1,67 @@
+{
+  "bounds": [
+    -180,
+    15,
+    -60,
+    72
+  ],
+  "center": [
+    -89.1279602050769,
+    38.82473078093182,
+    8
+  ],
+  "format": "png8",
+  "interactivity": {
+    "layer": "counties",
+    "template_teaser": "<strong>[NAMELSAD10]</strong><div style='text-align:right'>\n[VALD]% unemployment</div>\n<strong>Recovery Act</strong><div style='text-align:right'>$[PERCAP] per capita<br />\n[SUMNAME] total<br />\n[COUNTN] projects</div>",
+    "template_full": "",
+    "template_location": ""
+  },
+  "minzoom": 0,
+  "maxzoom": 9,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "name": "counties",
+      "id": "counties",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "layers/counties/ur-recov-county.shp",
+        "id": "counties",
+        "project": "unemployment"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "states",
+      "id": "states",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/cultural/10m-admin-1-states-provinces-shp.zip"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "labels",
+      "id": "labels",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "layers/counties/ur-recov-county.shp",
+        "id": "labels",
+        "project": "unemployment"
+      }
+    }
+  ],
+  "description": "Change in unemployment (1/2010 - 6/2011) vs. Recovery act spending per capita",
+  "attribution": "",
+  "legend": "<div class='unem'><strong>Change in unemployment (1/2010 - 6/2011)<br/>vs. Recovery act spending per capita</strong><div class='unem-grid'> <div class='unem-label'>< -3%</div><div class='unem-swatch unem-uA unem-s0'></div><div class='unem-swatch unem-uA unem-s1'></div><div class='unem-swatch unem-uA unem-s2'></div><div class='unem-swatch unem-uA unem-s3'></div> <div class='unem-label'>< -0.5%</div><div class='unem-swatch unem-u0 unem-s0'></div><div class='unem-swatch unem-u0 unem-s1'></div><div class='unem-swatch unem-u0 unem-s2'></div><div class='unem-swatch unem-u0 unem-s3'></div> <div class='unem-label'>0%</div><div class='unem-swatch unem-u1 unem-s0'></div><div class='unem-swatch unem-u1 unem-s1'></div><div class='unem-swatch unem-u1 unem-s2'></div><div class='unem-swatch unem-u1 unem-s3'></div> <div class='unem-label'>> +0.5%</div><div class='unem-swatch unem-u2 unem-s0'></div><div class='unem-swatch unem-u2 unem-s1'></div><div class='unem-swatch unem-u2 unem-s2'></div><div class='unem-swatch unem-u2 unem-s3'></div> <div class='unem-label'>> +1%</div><div class='unem-swatch unem-u3 unem-s0'></div><div class='unem-swatch unem-u3 unem-s1'></div><div class='unem-swatch unem-u3 unem-s2'></div><div class='unem-swatch unem-u3 unem-s3'></div> <div class='unem-label'></div><div class='unem-label'>$0+</div><div class='unem-label'>$200+</div><div class='unem-label'>$400+</div><div class='unem-label'>$800+</div></div> </div><style type='text/css'>.unem,.unem-grid,.unem-label,.unem-swatch { font:normal 10px/20px Arial,sans-serif !important; padding:0px !important; margin:0px !important; border:0px !important; } .unem strong { line-height:15px !important; display:block; padding:5px 0px !important; } .unem-grid { width:200px; height:100px; } .unem-label,.unem-swatch { width:40px; height:20px; float:left; } .unem-uA { background-color:#6c4; } .unem-u0 { background-color:#ae4; } .unem-u1 { background-color:#de4; } .unem-u2 { background-color:#fa1; } .unem-u3 { background-color:#d14; } .unem-label { text-align:center; } .unem-s2 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAjSURBVAiZXcOxDQAgEAAhdPLf/GwsjCSopnLPqry2z8bc4AClpxD3TftiZgAAAABJRU5ErkJggg==); } .unem-s1 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAlSURBVAiZTcexDQAgDMAww+X9PCwMjZTBqqn851R+A3cDczfgAc0nEnc8V0MyAAAAAElFTkSuQmCC); } .unem-s0 { background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAhSURBVAiZY/gPAQ3///9n+P//fwMDMuc/lAHnIKuAawMAdbM3zSV+a2sAAAAASUVORK5CYII=); }</style>",
+  "name": "Chage in unemployment (1/2010 - 6/2011)",
+  "version": "1.0.0"
+}
